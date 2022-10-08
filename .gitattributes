@@ -1,0 +1,226 @@
+# Common settings that generally should always be used with your language specific settings
+
+*          text=auto
+
+#
+# The above will handle all files NOT found below
+#
+
+# Documents
+*.bibtex   text diff=bibtex
+*.doc	        diff=astextplain
+*.DOC	        diff=astextplain
+*.docx          diff=astextplain
+*.DOCX          diff=astextplain
+*.dot           diff=astextplain
+*.DOT           diff=astextplain
+*.pdf           diff=astextplain
+*.PDF           diff=astextplain
+*.rtf           diff=astextplain
+*.RTF	        diff=astextplain
+*.md       text
+*.tex      text diff=tex
+*.adoc     text
+*.textile  text
+*.mustache text
+*.csv      text
+*.tab      text
+*.tsv      text
+*.txt      text
+*.lst      text
+*.sql      text
+
+# Scripts
+*.bash     text eol=lf
+*.fish     text eol=lf
+*.sh       text eol=lf
+# These are explicitly windows files and should use crlf
+*.bat      text eol=crlf
+*.cmd      text eol=crlf
+*.ps1      text eol=crlf
+
+# Serialisation
+*.json     text
+*.toml     text
+*.xml      text
+*.yaml     text
+*.yml      text
+
+# Archives
+*.7z       filter=lfs diff=lfs merge=lfs -binary
+*.gz       filter=lfs diff=lfs merge=lfs -binary
+*.tar      filter=lfs diff=lfs merge=lfs -binary
+*.tgz      filter=lfs diff=lfs merge=lfs -binary
+*.zip      filter=lfs diff=lfs merge=lfs -binary
+
+# Text files where line endings should be preserved
+*.patch    -text
+
+# Graphics
+*.ai              filter=lfs diff=lfs merge=lfs -binary
+*.bmp             filter=lfs diff=lfs merge=lfs -binary
+*.eps             filter=lfs diff=lfs merge=lfs -binary
+*.gif             filter=lfs diff=lfs merge=lfs -binary
+*.gifv            filter=lfs diff=lfs merge=lfs -binary
+*.ico             filter=lfs diff=lfs merge=lfs -binary
+*.jng             filter=lfs diff=lfs merge=lfs -binary
+*.jp2             filter=lfs diff=lfs merge=lfs -binary
+*.jpg             filter=lfs diff=lfs merge=lfs -binary
+*.jpeg            filter=lfs diff=lfs merge=lfs -binary
+*.jpx             filter=lfs diff=lfs merge=lfs -binary
+*.jxr             filter=lfs diff=lfs merge=lfs -binary
+*.pdf             filter=lfs diff=lfs merge=lfs -binary
+*.png             filter=lfs diff=lfs merge=lfs -binary
+*.psb             filter=lfs diff=lfs merge=lfs -binary
+*.psd             filter=lfs diff=lfs merge=lfs -binary
+# SVG treated as an asset (binary) by default.
+*.svg             text
+# If you want to treat it as binary,
+# use the following line instead.
+# *.svg           binary
+*.svgz            binary
+*.tif             filter=lfs diff=lfs merge=lfs -binary
+*.tiff            filter=lfs diff=lfs merge=lfs -binary
+*.wbmp            filter=lfs diff=lfs merge=lfs -binary
+*.webp            filter=lfs diff=lfs merge=lfs -binary
+*.tag             filter=lfs diff=lfs merge=lfs -binary
+*.iff             filter=lfs diff=lfs merge=lfs -binary
+*.pict            filter=lfs diff=lfs merge=lfs -binary
+*.dds             filter=lfs diff=lfs merge=lfs -binary
+*.xcf             filter=lfs diff=lfs merge=lfs -binary
+
+# Audio
+*.kar             filter=lfs diff=lfs merge=lfs -binary
+*.m4a             filter=lfs diff=lfs merge=lfs -binary
+*.mid             filter=lfs diff=lfs merge=lfs -binary
+*.midi            filter=lfs diff=lfs merge=lfs -binary
+*.mp3             filter=lfs diff=lfs merge=lfs -binary
+*.ogg             filter=lfs diff=lfs merge=lfs -binary
+*.ra              filter=lfs diff=lfs merge=lfs -binary
+*.wav             filter=lfs diff=lfs merge=lfs -binary
+*.aiff            filter=lfs diff=lfs merge=lfs -binary
+*.aif             filter=lfs diff=lfs merge=lfs -binary
+*.mod             filter=lfs diff=lfs merge=lfs -binary
+*.it              filter=lfs diff=lfs merge=lfs -binary
+*.s3m             filter=lfs diff=lfs merge=lfs -binary
+*.xm              filter=lfs diff=lfs merge=lfs -binary
+
+# Video
+*.3gpp            filter=lfs diff=lfs merge=lfs -binary
+*.3gp             filter=lfs diff=lfs merge=lfs -binary
+*.as              filter=lfs diff=lfs merge=lfs -binary
+*.asf             filter=lfs diff=lfs merge=lfs -binary
+*.asx             filter=lfs diff=lfs merge=lfs -binary
+*.fla             filter=lfs diff=lfs merge=lfs -binary
+*.flv             filter=lfs diff=lfs merge=lfs -binary
+*.m4v             filter=lfs diff=lfs merge=lfs -binary
+*.mng             filter=lfs diff=lfs merge=lfs -binary
+*.mov             filter=lfs diff=lfs merge=lfs -binary
+*.mp4             filter=lfs diff=lfs merge=lfs -binary
+*.mpeg            filter=lfs diff=lfs merge=lfs -binary
+*.mpg             filter=lfs diff=lfs merge=lfs -binary
+*.ogv             filter=lfs diff=lfs merge=lfs -binary
+*.swc             filter=lfs diff=lfs merge=lfs -binary
+*.swf             filter=lfs diff=lfs merge=lfs -binary
+*.webm            filter=lfs diff=lfs merge=lfs -binary
+*.bik			  filter=lfs diff=lfs merge=lfs -binary
+*.avi             filter=lfs diff=lfs merge=lfs -binary
+
+# 3D formats
+*.fbx             filter=lfs diff=lfs merge=lfs -binary
+*.obj             filter=lfs diff=lfs merge=lfs -binary
+*.max             filter=lfs diff=lfs merge=lfs -binary
+*.blend           filter=lfs diff=lfs merge=lfs -binary
+*.dae             filter=lfs diff=lfs merge=lfs -binary
+*.mb              filter=lfs diff=lfs merge=lfs -binary
+*.ma              filter=lfs diff=lfs merge=lfs -binary
+*.3ds             filter=lfs diff=lfs merge=lfs -binary
+*.dfx             filter=lfs diff=lfs merge=lfs -binary
+*.c4d             filter=lfs diff=lfs merge=lfs -binary
+*.lwo             filter=lfs diff=lfs merge=lfs -binary
+*.lwo2            filter=lfs diff=lfs merge=lfs -binary
+*.abc             filter=lfs diff=lfs merge=lfs -binary
+*.3dm             filter=lfs diff=lfs merge=lfs -binary
+
+# Packaging
+*.zip             filter=lfs diff=lfs merge=lfs -binary
+*.7z              filter=lfs diff=lfs merge=lfs -binary
+*.gz              filter=lfs diff=lfs merge=lfs -binary
+*.rar             filter=lfs diff=lfs merge=lfs -binary
+*.tar             filter=lfs diff=lfs merge=lfs -binary
+*.bz2             filter=lfs diff=lfs merge=lfs -binary
+
+# Fonts
+*.ttf             binary
+*.eot             binary
+*.otf             binary
+*.woff            binary
+*.woff2           binary
+
+# Executables
+*.exe             filter=lfs diff=lfs merge=lfs -binary
+*.pyc             filter=lfs diff=lfs merge=lfs -binary
+
+# Build
+*.dll             filter=lfs diff=lfs merge=lfs -binary
+*.pdb             filter=lfs diff=lfs merge=lfs -binary
+*.mdb             filter=lfs diff=lfs merge=lfs -binary
+
+# RC files (like .babelrc or .eslintrc)
+*.*rc             text
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore         text
+
+# Valve Files
+
+#
+# Maps
+#
+*.bsp             filter=lfs diff=lfs merge=lfs -binary
+*.vmf             filter=lfs diff=lfs merge=lfs -text
+*.vmx             filter=lfs diff=lfs merge=lfs -text
+*.vmt             filter=lfs diff=lfs merge=lfs -text
+*.lst             text
+*.prt             text
+#
+# Models
+#
+*.qc              text
+*.smd             text
+*.vtf             filter=lfs diff=lfs merge=lfs -binary
+*.vtx             filter=lfs diff=lfs merge=lfs -binary
+*.mdl             filter=lfs diff=lfs merge=lfs -binary
+*.vvd             filter=lfs diff=lfs merge=lfs -binary
+*.phy             filter=lfs diff=lfs merge=lfs -binary
+#
+# Scripts
+#
+*.ctx             binary
+*.vdf             text
+*.res             text
+*.txt             text
+*.vpc             text
+*.kv              text
+#
+# Caches
+#
+*.acf             binary
+*.cache           binary
+#
+# Packages
+#
+*.vpk             filter=lfs diff=lfs merge=lfs -binary
+*.nfc             filter=lfs diff=lfs merge=lfs -binary
+*.gfc             filter=lfs diff=lfs merge=lfs -binary
+#
+# Others
+#
+*.fgd             text
+
+#
+# Exclude files from exporting
+#
+
+.gitattributes export-ignore
+.gitignore     export-ignore
